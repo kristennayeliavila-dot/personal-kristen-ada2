@@ -1,0 +1,306 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Baloo 2', cursive;
+}
+
+body{
+	background-color: #FFF5CC;
+}
+
+/* ===== HEADER ===== */
+header{
+	background: linear-gradient(135deg, #FFD966, #FFCC70);
+	text-align: center;
+	padding:20px 0;
+}
+
+header h1{
+	color:#8B5E3C;
+	font-size:45px;
+	letter-spacing:2px;
+	margin-bottom:10px;
+}
+
+/* ===== MENU ===== */
+nav{
+	width:100%;
+}
+
+nav ul{
+	list-style:none;
+	display:flex;
+	justify-content:center;
+	gap:25px;
+}
+
+nav ul li a{
+	text-decoration:none;
+	color:#8B5E3C;
+	font-weight:600;
+	font-size:18px;
+	padding:10px 20px;
+	border-radius:25px;
+	background:white;
+	transition:0.3s;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav ul li a:hover{
+	background:#FFCC70;
+	color:white;
+	transform:scale(1.1);
+}
+
+.menu-icon{
+	display:none;
+	font-size:30px;
+	color:#8B5E3C;
+	cursor:pointer;
+}
+
+/* ===== SLIDER ===== */
+.slider{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+}
+
+.slides{
+	display:flex;
+	height:100%;
+	transition:0.5s;
+}
+
+.slide{
+	min-width:100%;
+	height:100%;
+}
+
+.slide img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+/* ===== CONTENIDO ===== */
+.container{
+	display:flex;
+	padding:20px;
+	gap:20px;
+}
+
+section{
+	margin-bottom:60px;
+}
+
+.main-content{
+	flex:3;
+	padding:20px;
+	background:#f4f4f4;
+	border-radius:15px;
+}
+
+.sidebar{
+	flex:1;
+	padding:20px;
+	background:#ddd;
+	border-radius:15px;
+}
+.sidebar ul {
+	list-style: none; /* quita las viñetas */
+	padding-left: 0;   /* quita el espacio extra a la izquierda */
+}
+
+/* ===== FOOTER ===== */
+footer{
+	background:#8B5E3C;
+	color:white;
+	text-align:center;
+	padding:15px;
+	margin-top:20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+	header h1{
+		font-size:28px;
+	}
+
+	nav ul{
+		flex-direction:column;
+		display:none;
+		width:100%;
+		background:#FFD966;
+		padding:10px 0;
+		gap:15px;
+	}
+
+	nav ul li{
+		width:100%;
+		text-align:center;
+	}
+
+	nav ul li a{
+		display:block;
+		width:100%;
+		border-radius:0;
+		box-shadow:none;
+	}
+
+	nav.responsive ul{
+		display:flex;
+	}
+
+	.menu-icon{
+		display:block;
+		margin:10px 0;
+	}
+
+	.slider{
+		height:250px;
+	}
+
+	.container{
+		flex-direction:column;
+	}
+
+	.main-content,
+	.sidebar{
+		width:100%;
+	}
+
+	.contenido-bienvenida,
+	.contenido-acerca{
+		flex-direction:column;
+		text-align:center;
+	}
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+/* BOTON ACTIVO */
+nav ul li a.active{
+	background:#8B5E3C;
+	color:white;
+}
+
+/* BIENVENIDA */
+.contenido-bienvenida{
+	display:flex;
+	align-items:center;
+	gap:30px;
+}
+
+.texto-bienvenida{
+	flex:2;
+}
+
+.imagen-bienvenida{
+	width:220px;
+	height:auto;
+	border-radius:20px;
+	box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	transition:0.3s;
+}
+
+.imagen-bienvenida:hover{
+	transform:scale(1.05);
+}
+
+/* HISTORIA */
+.contenido-acerca{
+	display:flex;
+	align-items:center;
+	gap:30px;
+}
+
+.texto-historia{
+	flex:2;
+}
+
+.imagen-historia{
+	width:290px;
+	height:auto;
+	border-radius:20px;
+	box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	transition:0.3s;
+}
+
+.imagen-historia:hover{
+	transform:scale(1.05);
+}
+
+.main-content,
+.sidebar {
+    text-align: justify;
+}
+
+.imagenes-galeria-collage{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-auto-rows: 250px; /* filas más altas */
+	gap: 15px;
+}
+
+.imagenes-galeria-collage img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+	box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagenes-galeria-collage img:hover{
+	transform: scale(1.05);
+	box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Tamaños ultra grandes dinámicos */
+.imagenes-galeria-collage img.grande{
+	grid-row: span 6; /* antes 5 */
+	grid-column: span 6; /* antes 5 */
+}
+
+/* CONTENIDO CONTACTO AJUSTADO */
+.contenido-contacto{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.texto-contacto{
+	flex: 2;
+}
+
+.imagen-contacto{
+	flex: 1;
+	max-width: 200px;  /* ahora es más pequeña */
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+	transition: transform 0.3s;
+}
+
+.imagen-contacto:hover{
+	transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+	.contenido-contacto{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.imagen-contacto{
+		width: 60%;  /* más proporcional en móvil */
+		margin-top: 15px;
+		max-width: none;
+	}
+}

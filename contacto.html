@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sobre mi</title>
+	<link rel="icon" href="img/logo.jpg">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+<header>
+	<h1>MI PAGINA WEB</h1>
+	<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="biografia.html">Acerca de mi</a></li>
+			<li><a href="galeria.html">Galería</a></li>
+			<li><a href="contacto.html" class="active">Contacto</a></li>
+		</ul>
+	</nav>
+</header>
+<section class="slider">
+	<div class="slides">
+		<div class="slide"><img src="img/slide10.jpg" alt=""></div>
+		<div class="slide"><img src="img/slide11.jpg" alt=""></div>
+		<div class="slide"><img src="img/slide12.jpg" alt=""></div>
+	</div>
+</section>
+<!-- CONTACTO -->
+<section id="contacto" class="container">
+	<div class="main-content contenido-contacto">
+
+		<div class="texto-contacto">
+			<h2>Contacto</h2>
+
+			<p>Teléfono: 9995-510-182</p>
+
+			<p>
+				Correo: 
+				<a href="mailto:kristen.nayeli.avila@gmail.com">
+				Enviar correo
+				</a>
+			</p>
+
+			<div class="redes">
+				<h3>Redes</h3>
+
+				<p>
+					<a href="https://www.instagram.com/kristales_idk/" target="_blank">
+						<img src="img/instagram.jpg" width="20" alt="Instagram">
+						@kristales_idk
+					</a>
+				</p>
+
+				<p>
+					<a href="https://www.facebook.com/kristen.nayeli" target="_blank">
+						<img src="img/facebook.jpg" width="20" alt="Facebook">
+						@Kristen Nayeli
+					</a>
+				</p>
+
+			</div>
+
+		</div>
+
+		<img src="img/pom3d.2.jpg" class="imagen-contacto" alt="Pompompurin">
+
+	</div>
+</section>
+
+
+<footer>
+	<p>© 2026 KRISTEN AVILA</p>
+</footer>
+
+
+<script>
+function toggleMenu(){
+	const nav = document.querySelector("nav");
+	nav.classList.toggle("responsive");
+}
+</script>
+
+</body>
+</html>

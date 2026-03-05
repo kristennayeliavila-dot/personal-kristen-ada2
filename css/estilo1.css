@@ -70,7 +70,7 @@ nav ul li a:hover{
 .slides{
 	display:flex;
 	height:100%;
-	transition:0.10s;
+	transition:0.5s;
 }
 
 .slide{
@@ -196,8 +196,8 @@ nav ul li a.active{
 	gap:30px;
 }
 
-.texto-bienvenida {
-    text-align: justify; /* solo para Bienvenidos */
+.texto-bienvenida{
+	flex:2;
 }
 
 .imagen-bienvenida{
@@ -212,6 +212,24 @@ nav ul li a.active{
 	transform:scale(1.05);
 }
 
+/* HISTORIA */
+.contenido-acerca{
+	display:flex;
+	align-items:center;
+	gap:30px;
+}
+
+.texto-historia{
+	flex:2;
+}
+
+.imagen-historia{
+	width:290px;
+	height:auto;
+	border-radius:20px;
+	box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	transition:0.3s;
+}
 
 .imagen-historia:hover{
 	transform:scale(1.05);

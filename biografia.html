@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sobre mi</title>
+	<link rel="icon" href="img/logo.jpg">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header>
+	<h1>MI PAGINA WEB</h1>
+	<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="biografia.html"class="active">Acerca de mi</a></li>
+			<li><a href="galeria.html">Galería</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+</header>
+<section class="slider">
+	<div class="slides">
+		<div class="slide"><img src="img/slide6.jpg" alt=""></div>
+		<div class="slide"><img src="img/slide5.jpg" alt=""></div>
+		<div class="slide"><img src="img/slide4.jpg" alt=""></div>
+	</div>
+</section>
+<!-- ACERCA / BIOGRAFÍA -->
+<section id="acerca" class="container">
+	<div class="main-content contenido-acerca">
+		<img src="img/pom3d.4.jpg" class="imagen-historia" alt="Pompompurin">
+		<div class="texto-historia">
+			<h2>Biografía</h2>
+			<p>
+				Me llamo Kristén Nayeli Ávila Sulub, nací el 4 de Septiembre de 2008 en Merida, Yucatán. Actualmente tengo 17 años, en este tiempo me han enseñado a ser una persona respetuosa, empática y amable. Desde pequeña siempre me ha atraído el arte, las manualidades, soy una persona bastante creativa y eso hizo que decidiera entrar en TIC´S. Mi sueño es tener mi carrera soñada y poder tener un trabajo estable. A lo largo del tiempo he aprendido bastante gracias a Dios, mis amigos, familia y maestros.
+			</p>
+		</div>
+	</div>
+
+	<div class="sidebar">
+		<img src="img/pom3d.3.jpg" class="imagen-historia" alt="Pompompurin">
+		<h3>Hobbies</h3>
+		<ul>
+			<li>Hacer manualidades</li>
+			<li>Dibujar</li>
+			<li>Ver anime</li>
+			<li>Maquillarme</li>
+			<li>Escuchar música</li>
+			<li>Tomar fotos</li>
+		</ul>
+	</div>
+</section>
+
+<footer>
+	<p>© 2026 KRISTEN AVILA</p>
+</footer>
+
+<script>
+	function toggleMenu(){
+		const nav = document.querySelector("nav");
+		nav.classList.toggle("responsive");
+	}
+
+	const links = document.querySelectorAll("nav ul li a");
+	links.forEach(link => {
+		link.addEventListener("click", function(){
+			links.forEach(l => l.classList.remove("active"));
+			this.classList.add("active");
+			document.querySelector("nav").classList.remove("responsive");
+		});
+	});
+
+	/* SLIDER AUTOMÁTICO */
+	const slides = document.querySelector(".slides");
+	if(slides){
+		let index=0;
+		const totalSlides=document.querySelectorAll(".slide").length;
+		setInterval(()=>{
+			index=(index+1)%totalSlides;
+			slides.style.transform=`translateX(-${index*100}%)`;
+		},3000);
+	}
+</script>
+
+
+</body>
+</html>

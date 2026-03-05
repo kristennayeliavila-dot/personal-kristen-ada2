@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
@@ -9,148 +9,61 @@
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-<script>
-	window.onload = function(){
-		alert('Bienvenido a esta pagina');
-	}
-</script>
 
 <header>
-	<h1>KRISTEN AVILA</h1>
+	<h1>MI PAGINA WEB</h1>
 	<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
 	<nav>
 		<ul>
-			<li><a href="#Bienvenidos" class="active">Inicio</a></li>
-			<li><a href="#acerca">Acerca de mi</a></li>
-			<li><a href="#servicios">Galería</a></li>
-			<li><a href="#contacto">Contacto</a></li>
+			<li><a href="index.html" class="active">Inicio</a></li>
+			<li><a href="biografia.html">Acerca de mi</a></li>
+			<li><a href="galeria.html">Galería</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
 		</ul>
 	</nav>
 </header>
 
-<!-- SLIDER -->
-<section class="slider" id="inicio">
+<section class="slider">
 	<div class="slides">
 		<div class="slide"><img src="img/slide1.jpg" alt=""></div>
 		<div class="slide"><img src="img/slide2.jpg" alt=""></div>
 		<div class="slide"><img src="img/slide3.jpg" alt=""></div>
 	</div>
-</section>
-
-<!-- BIENVENIDOS -->
-<section id="Bienvenidos" class="container">
-	<div class="main-content contenido-bienvenida">
-		<div class="texto-bienvenida">
-			<h2>Bienvenidos</h2>
-			<p>
-				¡Hola! Me llamo Kristén Nayeli Ávila Sulub. Soy estudiante del COBAY Plantel Santa Rosa, perteneciente a la capacitación de TIC'S.
+</section><!-- BIENVENIDA estilo biografía -->
+<section class="container">
+  <div class="main-content contenido-bienvenida">
+    <img src="img/pom.gif" class="imagen-bienvenida" alt="Pompompurin">
+    <div class="texto-bienvenida">
+      <h2>Bienvenidos</h2>
+      <p>
+        ¡Hola! Me llamo Kristén Nayeli Ávila Sulub. Soy estudiante del COBAY Plantel Santa Rosa, perteneciente a la capacitación de TIC'S.
 				He creado mi propia página web personal para que puedas conocerme mejor y saber las cosas que me agradan. Este espacio es parte de un proyecto escolar, pero también es un lugar donde he decidido fusionar mi aprendizaje técnico con una de mis mayores aficiones: el adorable mundo de Pompompurin.
-			</p>
-		</div>
-		<img src="img/pom3d.1.jpg" class="imagen-bienvenida" alt="Pompompurin">
-	</div>
+      </p>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h3>Mis favoritos</h3>
+    <ul>
+      <li><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4pwJ6OujVQL3IpCr8KeXIg?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+      <li><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0InIeZW4P6VO7dUGRM4AKH?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+    </ul>
+  </div>
 </section>
-
-<!-- SEPARADOR -->
-<div class="separador"></div>
-
-<!-- ACERCA / BIOGRAFÍA -->
-<section id="acerca" class="container">
-	<div class="main-content contenido-acerca">
-		<img src="img/pom3d.4.jpg" class="imagen-historia" alt="Pompompurin">
-		<div class="texto-historia">
-			<h2>Biografía</h2>
-			<p>
-				Me llamo Kristén Nayeli Ávila Sulub, nací el 4 de Septiembre de 2008 en Merida, Yucatán. Actualmente tengo 17 años, en este tiempo me han enseñado a ser una persona respetuosa, empática y amable. Desde pequeña siempre me ha atraído el arte, las manualidades, soy una persona bastante creativa y eso hizo que decidiera entrar en TIC´S. Mi sueño es tener mi carrera soñada y poder tener un trabajo estable. A lo largo del tiempo he aprendido bastante gracias a Dios, mis amigos, familia y maestros.
-			</p>
-		</div>
-	</div>
-	<div class="sidebar">
-		<img src="img/pom3d.3.jpg" class="imagen-historia" alt="Pompompurin">
-		<h3>Hobbies</h3>
-		<ul>
-			<li>Hacer manualidades</li>
-			<li>Dibujar</li>
-			<li>Ver anime</li>
-			<li>Maquillarme</li>
-			<li>Escuchar música</li>
-			<li>Tomar fotos</li>
-		</ul>
-	</div>
-</section>
-
-<!-- GALERÍA DINÁMICA -->
-<section id="servicios" class="container">
-	<div class="main-content galeria">
-		<h2>Galería</h2>
-		<div class="imagenes-galeria-collage" id="galeria-collage">
-			<img src="img/gal1.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal2.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal4.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal5.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal6.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal7.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal8.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal9.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal10.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal12.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal14.png" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal15.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal16.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal11.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal13.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal17.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal18.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal19.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal20.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal21.jpg" class="imagen-galeria" alt="Pompompurin">
-			<img src="img/gal22.jpg" class="imagen-galeria" alt="Pompompurin">
-		</div>
-	</div>
-</section>
-	<section id="contacto" class="container">
-	<div class="main-content contenido-contacto">
-		<div class="texto-contacto">
-			<h2>Contacto</h2>
-			<p>Teléfono: 9995-510-182</p>
-			<p>Correo: <a href="mailto:kristen.nayeli.avila@gmail.com">Enviar correo</a></p>
-
-			<!-- REDES -->
-			<div class="redes">
-				<h3>Redes</h3>
-				<p>
-					<a href="https://www.instagram.com/kristales_idk/" target="_blank">
-						<img src="img/instagram.jpg" width="20" alt="Instagram"> @kristales_idk
-					</a>
-				</p>
-				<p>
-					<a href="https://www.facebook.com/kristen.nayeli" target="_blank">
-						<img src="img/facebook.jpg" width="20" alt="Facebook"> @Kristen Nayeli
-					</a>
-				</p>
-			</div>
-		</div>
-
-		<img src="img/pom3d.2.jpg" class="imagen-contacto" alt="Pompompurin">
-	</div>
-</section>
-
 <footer>
 	<p>© 2026 KRISTEN AVILA</p>
 </footer>
 
 <script>
-	/* MENÚ RESPONSIVE */
 	function toggleMenu(){
 		const nav = document.querySelector("nav");
 		nav.classList.toggle("responsive");
 	}
 
-	/* BOTÓN ACTIVO */
 	const links = document.querySelectorAll("nav ul li a");
-	links.forEach(link=>{
+	links.forEach(link => {
 		link.addEventListener("click", function(){
-			links.forEach(l=>l.classList.remove("active"));
+			links.forEach(l => l.classList.remove("active"));
 			this.classList.add("active");
 			document.querySelector("nav").classList.remove("responsive");
 		});
